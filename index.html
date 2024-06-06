@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Add two number</title>
+    <!--Linking CSS file-->
+
+    <link rel="stylesheet" href="2.3.css">
+</head>
+
+<body>
+    <!--Creating class card-->
+
+    <div class="card">
+        <h2>Enter two numbers to add</h2>
+        <input type="number" name="number" id="n1" placeholder="Enter first number"><br><br>
+        <input type="number" name="number" id="n2" placeholder="Enter second number"><br><br>
+        <button onclick="calculate()">Calculate</button>
+        <h4 id="result"></h4>
+    </div>
+
+    <script>
+        //Making function for calculation of two numbers
+        function calculate() {
+            var num1 = Number(document.getElementById("n1").value);
+            var num2 = Number(document.getElementById("n2").value);
+            //using addition operator
+            var sum = num1 + num2;
+            //Printing result onclick function in HTML button tag
+            document.getElementById("result").innerText = "Result: " + sum;
+        }
+    </script>
+
+
+</body>
+</head>
